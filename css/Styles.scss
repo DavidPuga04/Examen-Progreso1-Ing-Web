@@ -1,0 +1,232 @@
+$primary: #f53e32;
+$text: #222;
+$muted: #777;
+$border: #e5e5e5;
+$bg-light: #f8f8f8;
+
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: $text;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+  background: $bg-light;
+  border-bottom: 1px solid $border;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.6rem 1rem;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    justify-self: start;
+    background: #eee;
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__nav {
+    justify-self: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+
+      i {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  &__contact {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: white;
+  border-bottom: 1px solid $border;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.9rem 1rem;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+
+    img {
+      width: 88px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: $muted;
+    }
+  }
+
+  &__search {
+    display: flex;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+
+    border: 1px solid $border;
+    border-radius: 6px;
+    overflow: hidden;
+
+    input {
+      flex: 1;
+      border: none;
+      padding: 0.55rem;
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    select {
+      border: none;
+      border-left: 1px solid $border;
+      padding: 0 0.5rem;
+      font-size: 0.8rem;
+      color: $muted;
+    }
+
+    button {
+      background: $primary;
+      border: none;
+      color: white;
+      padding: 0 0.9rem;
+      cursor: pointer;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.85rem;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* ================= BANNER ================= */
+.banner {
+  background: $primary;
+  color: white;
+
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.8rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0.6;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* TOPBAR */
+  .topbar {
+    &__menu {
+      display: none;
+    }
+
+    &__container {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  /* HEADER */
+  .header {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    &__search {
+      max-width: 100%;
+    }
+
+    &__actions {
+      justify-content: space-around;
+    }
+  }
+
+  /* BANNER */
+  .banner {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# --- IDEs & Editores ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Sistema Operativo ---
+DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Sass / CSS ---
+# Ignoramos los mapas de CSS (opcional, pero recomendado en producción)
+*.css.map
+*.sass.map
+
+# Si usas una carpeta de caché de Sass
+.sass-cache/
+
+# --- Node / Dependencias (Por si a futuro usas npm) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Archivos temporales ---
+*.log
+*.tmp
