@@ -16,9 +16,7 @@
 
       <!-- MENÚ -->
       <div class="topbar__menu-btn">
-        <svg class="icon" viewBox="0 0 24 24">
-          <path d="M3 6h18M3 12h18M3 18h18"/>
-        </svg>
+        <img src="assets/icons/iconomenu.svg" alt="Account" class="icon">
       </div>
 
       <!-- NAV -->
@@ -118,6 +116,85 @@
       </div>
     </section>
   </main>
+  <main class="shop-container">
+  <div class="shop-layout">
+    
+    <aside class="sidebar">
+      <div class="sidebar__section">
+        <h3 class="sidebar__title">Product Category</h3>
+        <ul class="sidebar__list">
+          <li><input type="checkbox"> Juice & Drinks <span>(10)</span></li>
+          <li><input type="checkbox"> Dairy & Milk <span>(54)</span></li>
+          <li><input type="checkbox"> Snack & Spice <span>(64)</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar__section">
+        <h3 class="sidebar__title">Filter By Price</h3>
+        <input type="range" class="sidebar__range" min="10" max="350">
+        <p class="sidebar__price-text">Price: <strong>$10 - $350</strong></p>
+        <button class="btn-primary">Filter</button>
+      </div>
+
+      <div class="sidebar__section">
+        <h3 class="sidebar__title">Product Colors</h3>
+        <ul class="sidebar__list">
+          <li><input type="checkbox"> Blue <span class="color-dot blue"></span></li>
+          <li><input type="checkbox"> Yellow <span class="color-dot yellow"></span></li>
+          <li><input type="checkbox"> Red <span class="color-dot red"></span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar__section">
+        <h3 class="sidebar__title">Product Tags</h3>
+        <div class="sidebar__tags">
+          <span class="tag">Vegetables</span>
+          <span class="tag">Juice</span>
+          <span class="tag">Food</span>
+          <span class="tag">Dry Fruits</span>
+        </div>
+      </div>
+    </aside>
+
+    <section class="products">
+      <div class="products__header">
+        <p>We found <strong>29</strong> items for you!</p>
+        <select class="products__sort">
+          <option>Sort By: Featured</option>
+        </select>
+      </div>
+
+      <div class="products__grid">
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="assets/img/limon.png" alt="Organic Lemon">
+            <button class="product-card__add" aria-label="Add to cart">
+              <img src="assets/icons/iconocart.svg" alt="">
+            </button>
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__category">Vegetables</span>
+            <h4 class="product-card__title">Fresh organic villa farm lemon 500gm pack</h4>
+            <div class="product-card__rating">★★★★★ <span>(4.5)</span></div>
+            <div class="product-card__price">
+              <span class="current">$120.25</span>
+              <span class="old">$123.25</span>
+            </div>
+          </div>
+        </article>
+        </div>
+
+      <div class="pagination">
+        <button class="pagination__btn">Previous</button>
+        <button class="pagination__btn pagination__btn--active">1</button>
+        <button class="pagination__btn">2</button>
+        <button class="pagination__btn">3</button>
+        <button class="pagination__btn">Next</button>
+      </div>
+    </section>
+
+  </div>
+</main>
 
 </body>
 </html>
