@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,12 +32,12 @@
 
           <li>
             Products
-           <img src="assets/icons/iconoflecha.svg" alt="Account" class="icon">
+            <img src="assets/icons/iconoflecha.svg" alt="Account" class="icon">
           </li>
 
           <li>
             Pages
-           <img src="assets/icons/iconoflecha.svg" alt="Account" class="icon">
+            <img src="assets/icons/iconoflecha.svg" alt="Account" class="icon">
           </li>
 
           <li>
@@ -52,7 +53,7 @@
       </nav>
 
       <!-- TELÉFONO -->
-      <div class="topbar__contact"> 
+      <div class="topbar__contact">
         <img src="assets/icons/telefonosinfondoarribaderecha.svg" alt="Account" class="icon">
         <span>+123 (456) (7890)</span>
       </div>
@@ -80,17 +81,17 @@
         </select>
 
         <button aria-label="Buscar">
-        <img src="assets/icons/iconolupa.svg" alt="Account" class="icon">
+          <img src="assets/icons/iconolupa.svg" alt="Account" class="icon">
         </button>
       </div>
 
       <!-- ACTIONS -->
       <div class="header__actions">
 
-       <span class="header__action">
-             <img src="assets/icons/iconoaccount.svg" alt="Account" class="icon">
-            Account
-       </span>
+        <span class="header__action">
+          <img src="assets/icons/iconoaccount.svg" alt="Account" class="icon">
+          Account
+        </span>
 
         <span class="header__action">
           <img src="assets/icons/iconowishlist.svg" alt="Account" class="icon">
@@ -98,7 +99,7 @@
         </span>
 
         <span class="header__action">
-         <img src="assets/icons/iconocart.svg" alt="Account" class="icon">
+          <img src="assets/icons/iconocart.svg" alt="Account" class="icon">
           Cart
         </span>
 
@@ -117,84 +118,368 @@
     </section>
   </main>
   <main class="shop-container">
-  <div class="shop-layout">
-    
-    <aside class="sidebar">
-      <div class="sidebar__section">
-        <h3 class="sidebar__title">Product Category</h3>
-        <ul class="sidebar__list">
-          <li><input type="checkbox"> Juice & Drinks <span>(10)</span></li>
-          <li><input type="checkbox"> Dairy & Milk <span>(54)</span></li>
-          <li><input type="checkbox"> Snack & Spice <span>(64)</span></li>
-        </ul>
-      </div>
+    <div class="shop-layout">
 
-      <div class="sidebar__section">
-        <h3 class="sidebar__title">Filter By Price</h3>
-        <input type="range" class="sidebar__range" min="10" max="350">
-        <p class="sidebar__price-text">Price: <strong>$10 - $350</strong></p>
-        <button class="btn-primary">Filter</button>
-      </div>
-
-      <div class="sidebar__section">
-        <h3 class="sidebar__title">Product Colors</h3>
-        <ul class="sidebar__list">
-          <li><input type="checkbox"> Blue <span class="color-dot blue"></span></li>
-          <li><input type="checkbox"> Yellow <span class="color-dot yellow"></span></li>
-          <li><input type="checkbox"> Red <span class="color-dot red"></span></li>
-        </ul>
-      </div>
-
-      <div class="sidebar__section">
-        <h3 class="sidebar__title">Product Tags</h3>
-        <div class="sidebar__tags">
-          <span class="tag">Vegetables</span>
-          <span class="tag">Juice</span>
-          <span class="tag">Food</span>
-          <span class="tag">Dry Fruits</span>
+      <aside class="sidebar">
+        <div class="sidebar__section">
+          <h3 class="sidebar__title">Product Category</h3>
+          <ul class="sidebar__list">
+            <li><input type="checkbox"> Juice & Drinks <span>(10)</span></li>
+            <li><input type="checkbox"> Dairy & Milk <span>(54)</span></li>
+            <li><input type="checkbox"> Snack & Spice <span>(64)</span></li>
+          </ul>
         </div>
-      </div>
-    </aside>
 
-    <section class="products">
-      <div class="products__header">
-        <p>We found <strong>29</strong> items for you!</p>
-        <select class="products__sort">
-          <option>Sort By: Featured</option>
-        </select>
-      </div>
+        <div class="sidebar__section">
+          <h3 class="sidebar__title">Filter By Price</h3>
+          <input type="range" class="sidebar__range" min="10" max="350">
+          <p class="sidebar__price-text">Price: <strong>$20 - $250</strong></p>
+          <button class="btn-primary">Filter</button>
+        </div>
 
-      <div class="products__grid">
-        <article class="product-card">
-          <div class="product-card__image">
-            <img src="assets/img/limon.png" alt="Organic Lemon">
-            <button class="product-card__add" aria-label="Add to cart">
-              <img src="assets/icons/iconocart.svg" alt="">
-            </button>
+        <div class="sidebar__section">
+          <h3 class="sidebar__title">Product Category</h3>
+          <ul class="sidebar__list">
+            <li><input type="checkbox"> Blue <span class="color-dot blue"></span></li>
+            <li><input type="checkbox"> Yellow <span class="color-dot yellow"></span></li>
+            <li><input type="checkbox"> Red <span class="color-dot red"></span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <h3 class="sidebar__title">Weight</h3>
+          <ul class="sidebar__list">
+            <li><input type="checkbox"> 2kg Pack
+            <li><input type="checkbox"> 20kg Pack 
+            <li><input type="checkbox"> 30kg Pack 
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <h3 class="sidebar__title">Products Tages</h3>
+          <div class="sidebar__tags">
+            <span class="tag">Vegetables</span>
+            <span class="tag">Juice</span>
+            <span class="tag">Food</span>
+            <span class="tag">Dry Fruits</span>
+            <span class="tag">Vegetables</span>
+            <span class="tag">Juice</span>
           </div>
-          <div class="product-card__content">
-            <span class="product-card__category">Vegetables</span>
-            <h4 class="product-card__title">Fresh organic villa farm lemon 500gm pack</h4>
-            <div class="product-card__rating">★★★★★ <span>(4.5)</span></div>
-            <div class="product-card__price">
-              <span class="current">$120.25</span>
-              <span class="old">$123.25</span>
+        </div>
+      </aside>
+
+      <section class="products">
+        <div class="products__header">
+          <p>We found <strong>29</strong> items for you!</p>
+          <select class="products__sort">
+            <option>Sort By: Featured</option>
+          </select>
+        </div>
+
+          <!-- Limon -->
+        <div class="products__grid">
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/limon.png" alt="Vegetables">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
             </div>
-          </div>
-        </article>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Vegetables</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class=" product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class=" product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class=" product-card__star">
+                  <img src="assets/icons/iconomediaestrella.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(4.5)</span>
+              </div>
+
+              <h4 class="product-card__title">Fresh organic villa farm lomon 500gm pack</h4>
+
+              <div class="product-card__price">
+                <span class="current">$120.25</span>
+                <span class="old">$123.25</span>
+              </div>
+            </div>
+          </article>
+
+            <!-- Chocolate -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/chocolate.png" alt="Snacks">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Snacks</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Best snakes with hazel nut pack 200gm</h4>
+
+              <div class="product-card__price">
+                <span class="current">$145</span>
+                <span class="old">$150</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Manzana -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/manzana.png" alt="Fruits">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Fruits</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconomediaestrella.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(4.5)</span>
+              </div>
+
+              <h4 class="product-card__title">Fresh organic apple 1kg simla marming</h4>
+
+              <div class="product-card__price">
+                <span class="current">$120.125</span>
+                <span class="old">$123.125</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sandia -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/sandia.png" alt="Fruits">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Fruits</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconomediaestrella.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconomediaestrella.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(3.2)</span>
+              </div>
+
+              <h4 class="product-card__title">Organic fresh venila farm watermelon 5kg</h4>
+
+              <div class="product-card__price">
+                <span class="current">$50.30</span>
+                <span class="old">$72.60</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bolsa amarilla -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/bolsaamarilla.png" alt="Snacks">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Snacks</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Sweet crunchy nut mix 250gm pack</h4>
+
+              <div class="product-card__price">
+                <span class="current">$120.125</span>
+                <span class="old">$123.125</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pan -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/pan.png" alt="Bakery">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Bakery</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Delicious white baked fresh bread and toast</h4>
+
+              <div class="product-card__price">
+                <span class="current">$20</span>
+                <span class="old">$22.10</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bolsa azul -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/bolsaazul.png" alt="Bakery">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Bakery</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Delicious white baked fresh bread and toast</h4>
+
+              <div class="product-card__price">
+                <span class="current">$20</span>
+                <span class="old">$22.10</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bolsa naranja -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/bolsanaranja.png" alt="Bakery">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Bakery</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Delicious white baked fresh bread and toast</h4>
+
+              <div class="product-card__price">
+                <span class="current">$20</span>
+                <span class="old">$22.10</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bolsa verde -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="assets/img/bolsaverde.png" alt="Bakery">
+              <button class="product-card__add" aria-label="Add to cart">
+                <img src="assets/icons/iconobolsa.svg" alt="Añadir">
+              </button>
+            </div>
+
+            <div class="product-card__content">
+              <span class="product-card__category">Bakery</span>
+
+              <div class="product-card__rating">
+                <div class="product-card__stars-container">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                  <img src="assets/icons/iconoestrellacompleta.svg" alt="" class="product-card__star">
+                </div>
+                <span class="product-card__rating-text">(5.0)</span>
+              </div>
+
+              <h4 class="product-card__title">Delicious white baked fresh bread and toast</h4>
+
+              <div class="product-card__price">
+                <span class="current">$20</span>
+                <span class="old">$22.10</span>
+              </div>
+            </div>
+          </article>
+
+
         </div>
 
-      <div class="pagination">
-        <button class="pagination__btn">Previous</button>
-        <button class="pagination__btn pagination__btn--active">1</button>
-        <button class="pagination__btn">2</button>
-        <button class="pagination__btn">3</button>
-        <button class="pagination__btn">Next</button>
-      </div>
-    </section>
+        <div class="pagination">
+          <button class="pagination__btn">Previous</button>
+          <button class="pagination__btn pagination__btn--active">1</button>
+          <button class="pagination__btn">2</button>
+          <button class="pagination__btn">3</button>
+          <button class="pagination__btn">Next</button>
+        </div>
+      </section>
 
-  </div>
-</main>
+    </div>
+  </main>
 
 </body>
+
 </html>
