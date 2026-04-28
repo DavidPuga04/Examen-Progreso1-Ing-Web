@@ -379,7 +379,7 @@ body {
 }
 .product-card__title {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 100;
   color: #222;
   margin: 0 0 1rem 0;
   line-height: 1.4;
@@ -396,7 +396,7 @@ body {
 }
 .product-card__price .current {
   color: #f53e32;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 .product-card__price .old {

@@ -443,7 +443,7 @@ body {
 
   &__title {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 100;
     color: $text;
     margin: 0 0 1rem 0;
     line-height: 1.4;
@@ -461,7 +461,7 @@ body {
 
     .current {
       color: $primary;
-      font-weight: 800;
+      font-weight: 600;
       font-size: 1.2rem;
     }
 
